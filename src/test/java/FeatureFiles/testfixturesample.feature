@@ -26,3 +26,5 @@ Feature: Test fixture suite
   Scenario: Test Case2
     * print "from test case 2"
 
+  #karate automation
+
