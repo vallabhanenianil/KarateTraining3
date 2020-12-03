@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>FeatureFiles.calledfeature</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-12-03 07:04:53 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:4]">[1:4] URL and PATH usage test case1 </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">FeatureFiles/calledfeature.feature</span><span class="feature-description">Karate called test suite | Using URL and PATH</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:4]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:4]</span><span class="scenario-name">URL and PATH usage test case1 </span>
+</div>
+<div class="scenario-time passed">ms: 749</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="1">
+<div class="step-ref passed">1</div>
+<div class="step-cell passed">Given url "http://reqres.in"</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="1">19:04:32.741 from karate-config.js file</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">And path "/api/users?page=2"</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">719</div>
+</div>
+<div class="preformatted" data-parent="3">19:04:33.100 request:
+1 &gt; GET http://reqres.in/api/users%3Fpage=2
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+19:04:33.242 response time in milliseconds: 137.07
+1 &lt; 301
+1 &lt; CF-RAY: 5fbdaa6e0a0e2e8f-BOM
+1 &lt; Cache-Control: max-age=3600
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 03 Dec 2020 13:34:32 GMT
+1 &lt; Expires: Thu, 03 Dec 2020 14:34:32 GMT
+1 &lt; Location: https://reqres.in/api/users%3Fpage=2
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=LWcC8nCF9irbZD4HEdVMeIBPUe5ZpGW4fSJ7RWph%2BPFit%2BQSLpAYwSNlmnaOu121n8FDW2q2%2BUaR9qdUTXHi%2BRfndKA79Oc5lTw%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; cf-request-id: 06ca68d8c300002e8f3d385000000001
+
+19:04:33.247 request:
+2 &gt; GET http://reqres.in/api/users%3Fpage=2
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: reqres.in
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+19:04:33.556 response time in milliseconds: 301.99
+2 &lt; 200
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Age: 6906
+2 &lt; CF-Cache-Status: HIT
+2 &lt; CF-RAY: 5fbdaa6ff86331b7-BOM
+2 &lt; Cache-Control: max-age=14400
+2 &lt; Connection: keep-alive
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Date: Thu, 03 Dec 2020 13:34:32 GMT
+2 &lt; Etag: W/"2c1-N6Rqerxquq2kgQhL51EiSg4x0R8"
+2 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+2 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=WZ3m0%2BFoTdeqRPWIX7UbAPV1S8cxZHI3odnnsWW2xMsI5rfluwsak2XFw%2FbsAFvAOt%2Fh3KPW1sYWSey1rRdiFw0dq1Qck5a6BHg%3D"}],"group":"cf-nel","max_age":604800}
+2 &lt; Server: cloudflare
+2 &lt; Set-Cookie: __cfduid=d9440c9b903d1bda6bff4ee0bf9f306301607002472; expires=Sat, 02-Jan-21 13:34:32 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Vary: Accept-Encoding
+2 &lt; Via: 1.1 vegur
+2 &lt; X-Powered-By: Express
+2 &lt; cf-request-id: 06ca68d9fe000031b707998000000001
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">And response.page == 1</div>
+</div>
+<div class="time-cell passed">21</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">And match response.page == '##'</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="preformatted" data-parent="6">19:04:33.597 after scenario inside config</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

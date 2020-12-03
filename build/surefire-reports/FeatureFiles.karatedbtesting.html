@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>FeatureFiles.karatedbtesting</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">0</div>
+            
+<div class="bg-danger" id="nav-fail">2</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-12-03 07:04:53 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item failed">
+<a href="#[1:7]">[1:7] Testing select query </a>
+</div>
+<div class="nav-item failed">
+<a href="#[2:12]">[2:12] Testing insert query </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">FeatureFiles/karatedbtesting.feature</span><span class="feature-description">Karate DB Testing</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:7]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">Testing select query </span>
+</div>
+<div class="scenario-time failed">ms: 14725</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:7]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:7]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* def db =  Java.type('misc.MyDbUtil')</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="preformatted" data-parent="1">19:04:38.608 from karate-config.js file</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">* def rows =  db.selectStatement("select * from tools")</div>
+</div>
+<div class="time-cell passed">14712</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">* print rows</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="3">19:04:53.329 [print]</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref failed">4</div>
+<div class="step-cell failed">* match rows contains "karate"</div>
+</div>
+<div class="time-cell failed">5</div>
+</div>
+<div class="preformatted" data-parent="4">19:04:53.334 assertion failed: path: $, actual: '', expected: 'karate', reason: not a sub-string19:04:53.335 after scenario inside config
+karatedbtesting.feature:10 - path: $, actual: '', expected: 'karate', reason: not a sub-string</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2:12]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [2:12]</span><span class="scenario-name">Testing insert query </span>
+</div>
+<div class="scenario-time failed">ms: 1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2:12]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2:12]bg">
+<div class="step-container" id="5">
+<div class="step-ref bg-step">5</div>
+<div class="step-cell passed">* def db =  Java.type('misc.MyDbUtil')</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="5">19:04:53.338 from karate-config.js file</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref failed">6</div>
+<div class="step-cell failed">* def res =  db.insertStatement("insert into tools values(10, "bcs","com"))</div>
+</div>
+<div class="time-cell failed">1</div>
+</div>
+<div class="preformatted" data-parent="6">karatedbtesting.feature:13 - evaluation (js) failed: db.insertStatement("insert into tools values(10, "bcs","com")), javax.script.ScriptException: &lt;eval&gt;:1:62 Missing close quote&#13;
+db.insertStatement("insert into tools values(10, "bcs","com"))&#13;
+                                                              ^ in &lt;eval&gt; at line number 1 at column number 62
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref skipped">7</div>
+<div class="step-cell skipped">* print res</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref skipped">8</div>
+<div class="step-cell skipped">* match response == success</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="preformatted" data-parent="8">19:04:53.340 after scenario inside config</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

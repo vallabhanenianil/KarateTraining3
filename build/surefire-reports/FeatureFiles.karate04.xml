@@ -1,0 +1,19 @@
+<testsuite failures="1" name="FeatureFiles/karate04.feature" skipped="0" tests="1" time="0.971023">
+  <testcase classname="FeatureFiles.karate04" name="SOAP API Testing" time="0.971023">
+    <failure message="karate04.feature:27 - assert evaluated to false: responseTime &lt;= '500'">Given url "https://www.w3schools.com/xml/tempconvert.asmx" ................ passed
+And header Content-Type = "text/xml; charset=utf-8" ....................... passed
+And request ............................................................... passed
+When soap action "https://www.w3schools.com/xml/CelsiusToFahrenheit" ...... passed
+Then status 200 ........................................................... passed
+And match response contains "98.6" ........................................ passed
+And match response //CelsiusToFahrenheitResult == "98.6" .................. passed
+And match responseHeaders['Server'] == ['Microsoft-IIS/7.5'] .............. passed
+And match responseHeaders['Server'][0] == 'Microsoft-IIS/7.5' ............. passed
+And match responseType == 'xml' ........................................... passed
+And assert responseTime &lt;= '500' .......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate04.feature:27 - assert evaluated to false: responseTime &lt;= '500'&#13;
+	at ✽.And assert responseTime &lt;= '500' (karate04.feature:27)</failure>
+  </testcase>
+</testsuite>

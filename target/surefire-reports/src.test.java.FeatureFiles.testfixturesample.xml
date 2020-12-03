@@ -1,0 +1,8 @@
+<testsuite failures="0" name="src/test/java/FeatureFiles/testfixturesample.feature" skipped="0" tests="1" time="0.009389">
+  <testcase classname="src.test.java.FeatureFiles.testfixturesample" name="Test Case2" time="0.009389">
+    <system-out>* print "Before Scenario" ................................................. passed
+* configure afterScenario = ............................................... passed
+* configure afterFeature = ................................................ passed
+* print "from test case 2" ................................................ passed</system-out>
+  </testcase>
+</testsuite>

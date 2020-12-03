@@ -1,0 +1,30 @@
+<testsuite failures="0" name="FeatureFiles/ReadingCSVdataforDDT2.feature" skipped="0" tests="4" time="0.012741">
+  <testcase classname="FeatureFiles.ReadingCSVdataforDDT2" name="Reading data from DDT testing" time="0.002911">
+    <system-out>* def data =  read('classpath:data.csv') .................................. passed
+* print "1,karate,30,1989" ................................................ passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.ReadingCSVdataforDDT2" name="Reading data from DDT testing" time="0.002653">
+    <system-out>* def data =  read('classpath:data.csv') .................................. passed
+* print "1,karate,30,1989" ................................................ passed
+* def data =  read('classpath:data.csv') .................................. passed
+* print "2,abc,21,1999" ................................................... passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.ReadingCSVdataforDDT2" name="Reading data from DDT testing" time="0.002649">
+    <system-out>* def data =  read('classpath:data.csv') .................................. passed
+* print "1,karate,30,1989" ................................................ passed
+* def data =  read('classpath:data.csv') .................................. passed
+* print "2,abc,21,1999" ................................................... passed
+* def data =  read('classpath:data.csv') .................................. passed
+* print "3,xyz,2000,&lt;yob&gt;" ................................................ passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.ReadingCSVdataforDDT2" name="Reading data from DDT testing" time="0.004529">
+    <system-out>* def data =  read('classpath:data.csv') .................................. passed
+* print "1,karate,30,1989" ................................................ passed
+* def data =  read('classpath:data.csv') .................................. passed
+* print "2,abc,21,1999" ................................................... passed
+* def data =  read('classpath:data.csv') .................................. passed
+* print "3,xyz,2000,&lt;yob&gt;" ................................................ passed
+* def data =  read('classpath:data.csv') .................................. passed
+* print "4,asd,1989,&lt;yob&gt;" ................................................ passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,12 @@
+<testsuite failures="1" name="src/test/java/FeatureFiles/karatedbtesting.feature" skipped="0" tests="1" time="14.709576">
+  <testcase classname="src.test.java.FeatureFiles.karatedbtesting" name="Testing select query" time="14.709576">
+    <failure message="karatedbtesting.feature:10 - path: $, actual: '', expected: 'karate', reason: not a sub-string">* def db =  Java.type('misc.MyDbUtil') .................................... passed
+* def rows =  db.selectStatement("select * from tools") ................... passed
+* print rows .............................................................. passed
+* match rows contains "karate" ............................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karatedbtesting.feature:10 - path: $, actual: '', expected: 'karate', reason: not a sub-string&#13;
+	at ✽.* match rows contains "karate" (karatedbtesting.feature:10)</failure>
+  </testcase>
+</testsuite>

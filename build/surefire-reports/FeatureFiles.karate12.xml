@@ -1,0 +1,31 @@
+<testsuite failures="1" name="FeatureFiles/karate12.feature" skipped="0" tests="3" time="0.026461">
+  <testcase classname="FeatureFiles.karate12" name="Static Variable TC" time="0.010655">
+    <system-out>* def constants = Java.type('misc.automationconstants') ................... passed
+* print constants.devUrl .................................................. passed
+* print constants.getDevUrl() ............................................. passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.karate12" name="NonStatic Variable TC" time="0.009177">
+    <system-out>* def constants = Java.type('misc.automationconstants') ................... passed
+* print constants.devUrl .................................................. passed
+* print constants.getDevUrl() ............................................. passed
+* def env1  = ............................................................. passed
+* def qaUrl = call env1 ................................................... passed
+* print qaUrl; ............................................................ passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.karate12" name="NonStatic Variable TC2" time="0.00663">
+    <failure message="karate12.feature:32 - javascript function call failed: &lt;eval&gt;:3 TypeError: Java.type(&quot;misc.automationconstants&quot;) is not a function">* def constants = Java.type('misc.automationconstants') ................... passed
+* print constants.devUrl .................................................. passed
+* print constants.getDevUrl() ............................................. passed
+* def env1  = ............................................................. passed
+* def qaUrl = call env1 ................................................... passed
+* print qaUrl; ............................................................ passed
+* def env1  = ............................................................. passed
+* def qaUrl = call env1 ................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate12.feature:32 - javascript function call failed: &lt;eval&gt;:3 TypeError: Java.type("misc.automationconstants") is not a function&#13;
+	at ✽.* def qaUrl = call env1 (karate12.feature:32)&#13;
+
+* print qaUrl; ............................................................ skipped</failure>
+  </testcase>
+</testsuite>

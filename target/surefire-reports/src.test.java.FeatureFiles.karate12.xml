@@ -1,0 +1,12 @@
+<testsuite failures="1" name="src/test/java/FeatureFiles/karate12.feature" skipped="0" tests="1" time="0.017626">
+  <testcase classname="src.test.java.FeatureFiles.karate12" name="NonStatic Variable TC2" time="0.017626">
+    <failure message="karate12.feature:32 - javascript function call failed: &lt;eval&gt;:3 TypeError: function type() { [native code] } is not a constructor function">* def env1  = ............................................................. passed
+* def qaUrl = call env1 ................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate12.feature:32 - javascript function call failed: &lt;eval&gt;:3 TypeError: function type() { [native code] } is not a constructor function&#13;
+	at ✽.* def qaUrl = call env1 (karate12.feature:32)&#13;
+
+* print qaUrl; ............................................................ skipped</failure>
+  </testcase>
+</testsuite>

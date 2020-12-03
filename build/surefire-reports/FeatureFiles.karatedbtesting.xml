@@ -1,0 +1,35 @@
+<testsuite failures="2" name="FeatureFiles/karatedbtesting.feature" skipped="0" tests="2" time="14.725715">
+  <testcase classname="FeatureFiles.karatedbtesting" name="Testing select query" time="14.72463">
+    <failure message="karatedbtesting.feature:10 - path: $, actual: '', expected: 'karate', reason: not a sub-string">* def db =  Java.type('misc.MyDbUtil') .................................... passed
+* def rows =  db.selectStatement("select * from tools") ................... passed
+* print rows .............................................................. passed
+* match rows contains "karate" ............................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karatedbtesting.feature:10 - path: $, actual: '', expected: 'karate', reason: not a sub-string&#13;
+	at ✽.* match rows contains "karate" (karatedbtesting.feature:10)</failure>
+  </testcase>
+  <testcase classname="FeatureFiles.karatedbtesting" name="Testing insert query" time="0.001084">
+    <failure message="karatedbtesting.feature:13 - evaluation (js) failed: db.insertStatement(&quot;insert into tools values(10, &quot;bcs&quot;,&quot;com&quot;)), javax.script.ScriptException: &lt;eval&gt;:1:62 Missing close quote&#13;&#10;db.insertStatement(&quot;insert into tools values(10, &quot;bcs&quot;,&quot;com&quot;))&#13;&#10;                                                              ^ in &lt;eval&gt; at line number 1 at column number 62&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* def db =  Java.type('misc.MyDbUtil') .................................... passed
+* def rows =  db.selectStatement("select * from tools") ................... passed
+* print rows .............................................................. passed
+* match rows contains "karate" ............................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karatedbtesting.feature:10 - path: $, actual: '', expected: 'karate', reason: not a sub-string&#13;
+	at ✽.* match rows contains "karate" (karatedbtesting.feature:10)&#13;
+
+* def db =  Java.type('misc.MyDbUtil') .................................... passed
+* def res =  db.insertStatement("insert into tools values(10, "bcs","com")) . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karatedbtesting.feature:13 - evaluation (js) failed: db.insertStatement("insert into tools values(10, "bcs","com")), javax.script.ScriptException: &lt;eval&gt;:1:62 Missing close quote&#13;
+db.insertStatement("insert into tools values(10, "bcs","com"))&#13;
+                                                              ^ in &lt;eval&gt; at line number 1 at column number 62
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* def res =  db.insertStatement("insert into tools values(10, "bcs","com")) (karatedbtesting.feature:13)&#13;
+
+* print res ............................................................... skipped
+* match response == success ............................................... skipped</failure>
+  </testcase>
+</testsuite>

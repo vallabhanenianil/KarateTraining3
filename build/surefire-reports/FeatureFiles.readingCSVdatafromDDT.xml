@@ -1,0 +1,20 @@
+<testsuite failures="0" name="FeatureFiles/readingCSVdatafromDDT.feature" skipped="0" tests="4" time="0.00479">
+  <testcase classname="FeatureFiles.readingCSVdatafromDDT" name="Reading data from DDT testing" time="0.001181">
+    <system-out>* print "1,karate,30,1989" ................................................ passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.readingCSVdatafromDDT" name="Reading data from DDT testing" time="0.001257">
+    <system-out>* print "1,karate,30,1989" ................................................ passed
+* print "2,abc,21,1999" ................................................... passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.readingCSVdatafromDDT" name="Reading data from DDT testing" time="0.001215">
+    <system-out>* print "1,karate,30,1989" ................................................ passed
+* print "2,abc,21,1999" ................................................... passed
+* print "3,xyz,2000,&lt;yob&gt;" ................................................ passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.readingCSVdatafromDDT" name="Reading data from DDT testing" time="0.001137">
+    <system-out>* print "1,karate,30,1989" ................................................ passed
+* print "2,abc,21,1999" ................................................... passed
+* print "3,xyz,2000,&lt;yob&gt;" ................................................ passed
+* print "4,asd,1989,&lt;yob&gt;" ................................................ passed</system-out>
+  </testcase>
+</testsuite>
